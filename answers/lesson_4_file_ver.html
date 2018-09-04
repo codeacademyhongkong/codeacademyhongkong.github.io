@@ -9,7 +9,7 @@
     <link type="text/css" rel="stylesheet" href="/static/css/custom.css" media="screen,projection" />
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Answers from exercise 2</title>
+    <title>Answers from exercise 4</title>
     <link rel="icon" href="/static/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="/static/highlight/styles/default.css">
     <script src="/static/highlight/highlight.pack.js"></script>
@@ -20,29 +20,56 @@
     <div class="section container">
         <div class="row centered">
             <div class="col s12">
-                <h5>Answer key to exercise in lesson 2:</h5>
+                <h5>Answer key to exercise in lesson 4:</h5>
                 <pre>
 <code class="python"># Question 1
-speed = 42
-if speed > 100:
-    print('Too fast!')
+count = 1
+while count <= 50:
+    count_str = str(count)
+    if '3' in count_str or '6' in count_str or '9' in count_str:
+        print('*claps*')
+    else:
+        print(count_str)
+    count = count + 1
+
 
 # Question 2
-cash = 99999999999
-price = 69
-if cash >= price:
-    print('Affordable')
-else:
-    print('Sorry, you\'re too poor')
+names = ['Alex', 'Sonia', 'Julia', 'Leona', 'Johan']
+boys = []
+girls = []
+
+for name in names:
+    if name[-1] == 'a':
+        girls.append(name)
+    else:
+        boys.append(name)
+
+print('Boys: ', boys)
+print('Girls: ', girls)
+
 
 # Question 3
-name = 'Alex'
-if name == 'Johan':
-    print('Hello Johan')
-elif name == 'Alex':
-    print('Hello Alex')
-else:
-    print('Hello')
+# while loop
+fibonacci_numbers = []
+previous = 0
+current = 1
+index = 1 # as the initial value for current is the 1st 
+while index < 50: 
+    index += 1 # equiv to index = index + 1
+    temp = current
+    current = previous + current
+    previous = temp
+    fibonacci_numbers.append(current)
+print(fibonacci_numbers)
+
+# for loop
+fibonacci_numbers = []
+previous = 0
+current = 1
+for x in range(50 - 1):
+    previous, current = current, previous + current
+    fibonacci_numbers.append(current)
+print(fibonacci_numbers)
 </code>
                 </pre>
             </div>
