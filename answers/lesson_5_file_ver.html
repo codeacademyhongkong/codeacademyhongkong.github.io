@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="/static/css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="/static/css/custom.css" media="screen,projection" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Answers from exercise 5</title>
+    <link rel="icon" href="/static/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/static/highlight/styles/default.css">
+    <script src="/static/highlight/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+<body>
+    <div class="section container">
+        <div class="row centered">
+            <div class="col s12">
+                <h5>Answer key to exercise in lesson 5:</h5>
+                <pre>
+<code class="python"># Question 1
+j = {
+    'name': 'Johan',
+    'length': 180
+}
+a = {
+    'name': 'Alex',
+    'length': 190
+}
+
+total_length = j['length'] + a['length']
+people = {
+    'data': [j, a],
+    'total_length': total_length
+}
+
+print(people)
+
+
+
+# Question 2
+cities = [
+    {'city': 'HK', 'size': 7}, 
+    {'city': 'NY', 'size': 10}
+]
+
+flipped = {
+    'names': [],
+    'sizes': []
+}
+
+for city in cities:
+    city_name = city['city']
+    city_size = city['size']
+
+    flipped['names'].append(city_name)
+    flipped['sizes'].append(city_size)
+
+print(flipped)
+
+</code>
+                </pre>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
